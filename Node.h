@@ -14,12 +14,13 @@ class Node {
   Node* getLeft();
   void setRight(Node* newRight);
   void setLeft(Node* newLeft);
-
+  Node* getParent();
+  void setParent(Node* newParent);
+  
   int value;
-  Node* previous;
   Node* left;
   Node* right;
-
+  Node* parent;
 };
 
 #endif
